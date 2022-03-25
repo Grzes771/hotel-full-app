@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@store/*": ["src/store/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@common/*": ["src/common/*"],
+      "@helpers/*": ["src/helpers/*"],
+      "@img/*": ["src/img/*"],
+      "@additives/*": ["src/modules/additives/*"],
+      "@modules/*": ["src/modules/*"]
+    }
+  },
+  "include": ["src"]
+}

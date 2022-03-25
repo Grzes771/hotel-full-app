@@ -1,0 +1,15 @@
+export const LANDING_PAGE_ROUTE = "/";
+export const OFFER_ROUTE = "/offer";
+export const GALLERY_ROUTE = "/gallery";
+export const RESERVATION_ROUTE = "/reservation";
+export const LOGIN_ROUTE = "/login";
+export const REMIND_ROUTE = "/remind";
+export const REGISTER_ROUTE = "/register";
+export const HOMEPAGE_BLOG_ROUTE = "/blog";
+export const NEW_PASSWORD_ROUTE = "/reset-password/:token";
+export const USER_SETTINGS_ROUTE = "user/settings";
+export const USER_RESERVATION_LIST_ROUTE = "user/reservations";
+export const RESERVATION_LIST_ROUTE = "/reservations";
+export const WRITE_BLOG_ROUTE = "/write";
+export const SINGLEPAGE_BLOG_ROUTE = "/blog/:articleId";
+export const UPDATE_ARTICLE_BLOG_ROUTE = "/blog/update/:articleId";
