@@ -10,7 +10,7 @@ exports.addReservationController = async (req, res) => {
   const { email } = req.profile;
 
   if (!email) {
-    Reservation.findOne({ phone }).exec((err, reservation) => {
+    Reservation.findOne({ phone, startDate }).exec((err, reservation) => {
       if (reservation) {
         return res.code(202).send({ message: C.RESERVATION_BUSY });
       } else {
@@ -35,24 +35,30 @@ exports.addReservationController = async (req, res) => {
       }
     });
   } else {
-    User.findOne({ email }).exec((err, user) => {
-      if (user) {
-        const newReservation = new Reservation({
-          username,
-          phone,
-          amount,
-          accommodationType,
-          startDate,
-          endDate,
-          userEmail: user.email,
-        });
+    Reservation.findOne({ phone, startDate }).exec((err, reservation) => {
+      if (reservation) {
+        return res.code(202).send({ message: C.RESERVATION_BUSY });
+      } else {
+        User.findOne({ email }).exec((err, user) => {
+          if (user) {
+            const newReservation = new Reservation({
+              username,
+              phone,
+              amount,
+              accommodationType,
+              startDate,
+              endDate,
+              userEmail: user.email,
+            });
 
-        newReservation.save((err, createdReservation) => {
-          if (err || !createdReservation) {
-            return res.code(500).send({ error: err });
-          } else {
-            return res.status(200).send({
-              message: C.RESERVATION_SUCCESS,
+            newReservation.save((err, createdReservation) => {
+              if (err || !createdReservation) {
+                return res.code(500).send({ error: err }), console.log(err);
+              } else {
+                return res.status(200).send({
+                  message: C.RESERVATION_SUCCESS,
+                });
+              }
             });
           }
         });
