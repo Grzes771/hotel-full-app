@@ -3,7 +3,7 @@ The client side of hotel-full-app was created in the Create-React-App and the se
 
 My main goal during creating this app was to build simple version of hotel web app with basic functions like:<br/>
 • registration,<br/>
-• account login created during registration or login via mail,<br/>
+• account login created during registration,<br/>
 • possibility of creating own reservation by user and preview of all reservations, writing and editing comments on blog,<br/>
 • adding likes to articles and comments other users.<br/>
 
