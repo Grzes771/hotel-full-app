@@ -22,7 +22,7 @@ My main goal during creating this app was to build simple version of hotel web a
 • react-parallax to add smooth titles scroll,<br/>
 • react-loader-spinner to add spinner animation while loading.<br/>
 
-**On server side I used:
+**On server side I used:<br/>
 • node.js,<br/>
 • fastify,<br/>
 • fastify-cors,<br/>
