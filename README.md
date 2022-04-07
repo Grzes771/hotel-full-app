@@ -9,7 +9,7 @@ My main goal during creating this app was to build simple version of hotel web a
 
 
 ## Technologies and libraries<br/>
-**On the client side of my app I used the following technologies:<br/>
+On the client side of my app I used the following technologies:<br/>
 • Typescript,<br/>
 • redux to manage state,<br/>
 • react-router and react-router-dom to navigate components,<br/>
@@ -22,7 +22,7 @@ My main goal during creating this app was to build simple version of hotel web a
 • react-parallax to add smooth titles scroll,<br/>
 • react-loader-spinner to add spinner animation while loading.<br/>
 
-**On server side I used:<br/>
+On server side I used:<br/>
 • node.js,<br/>
 • fastify,<br/>
 • fastify-cors,<br/>
