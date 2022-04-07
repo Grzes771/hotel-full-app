@@ -1,4 +1,4 @@
-##About this app<br/>
+## About this app<br/>
 The client side of hotel-full-app was created in the Create-React-App and the server side was created in node.js with Fastify.<br/>
 
 My main goal during creating this app was to build simple version of hotel web app with basic functions like:<br/>
@@ -8,8 +8,8 @@ My main goal during creating this app was to build simple version of hotel web a
 • adding likes to articles and comments other users.<br/>
 
 
-##Technologies and libraries<br/>
-**On the client side of my app I used the following technologies:<br/>
+## Technologies and libraries<br/>
+** On the client side of my app I used the following technologies:<br/>
 • Typescript,<br/>
 • redux to manage state,<br/>
 • react-router and react-router-dom to navigate components,<br/>
@@ -22,7 +22,7 @@ My main goal during creating this app was to build simple version of hotel web a
 • react-parallax to add smooth titles scroll,<br/>
 • react-loader-spinner to add spinner animation while loading.<br/>
 
-**On server side I used:
+** On server side I used:
 • node.js,<br/>
 • fastify,<br/>
 • fastify-cors,<br/>
@@ -31,9 +31,9 @@ My main goal during creating this app was to build simple version of hotel web a
 • mongoose.<br/>
 
 
-##How to run this app?<br/>
-1. Clone repository with git clone https://github.com/grzes771/hotel-full-app.git<br/>
-2. Fetch all dependencies on the server side using npm install and then go to the client - ./client and fetch all dependiences using also npm.<br/>
-3. Run app using npm run dev or yarn dev.<br/>
-4. Open http://localhost:3000 to view it in the browser.<br/>
-5. Admin login: admin, admin password: adminadmin<br/>
+## How to run this app?<br/>
+1.Clone repository with git clone https://github.com/grzes771/hotel-full-app.git<br/>
+2.Fetch all dependencies on the server side using npm install and then go to the client - ./client and fetch all dependiences using also npm.<br/>
+3.Run app using npm run dev or yarn dev.<br/>
+4.Open http://localhost:3000 to view it in the browser.<br/>
+5.Admin login: admin, admin password: adminadmin<br/>
